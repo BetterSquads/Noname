@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4oc8kuswvkh8"]
+
+[ext_resource type="Texture2D" uid="uid://y67gj5kjqso8" path="res://assets/1617587583_3-p-kosmos-fon-chernii-3.jpg" id="1_frdsp"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="space" type="ParallaxLayer" parent="."]
+
+[node name="16175875833-p-kosmos-fon-chernii-3" type="Sprite2D" parent="space"]
+position = Vector2(581.5, 328)
+scale = Vector2(0.5895, 0.526667)
+texture = ExtResource("1_frdsp")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
