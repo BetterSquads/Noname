@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://wvlqwg52uuh5"]
+
+[ext_resource type="Texture2D" uid="uid://cwvgtplk4paqe" path="res://sprites/icon.svg" id="1_tdi5s"]
+[ext_resource type="Script" path="res://scenes/Icon.gd" id="2_ynty7"]
+[ext_resource type="Texture2D" uid="uid://d3x0j0in40lf6" path="res://sprites/2024-03-03_13.13.39.png" id="3_v1mcq"]
+[ext_resource type="Script" path="res://scenes/player.gd" id="4_i3xx7"]
+
+[node name="test" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(560, 284)
+texture = ExtResource("1_tdi5s")
+script = ExtResource("2_ynty7")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(364, 286.25)
+scale = Vector2(0.179688, 0.207031)
+texture = ExtResource("3_v1mcq")
+script = ExtResource("4_i3xx7")
