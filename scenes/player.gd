@@ -1,8 +1,11 @@
-extends Node2D
+extends CharacterBody2D
 func _process(delta):
+	#playerscope
+	
 	#playermove
 	var direction = Input.get_vector("left", "right", "up", "down")
-	position += direction * 350 * delta
+	velocity = direction * 500
+	move_and_slide ()
 	if Input.is_action_pressed("left"):
 		print("left")
 	if Input.is_action_pressed("right"):
